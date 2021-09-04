@@ -14,3 +14,5 @@ def market():
     items = Item.query.all()
 
     return render_template('market.html', items=items)
+
+
