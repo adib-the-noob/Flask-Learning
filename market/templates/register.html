@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+              {{ form.username.label() }}
+              {{ form.username(class="form-control", placeholder="User Name") }}
+
+              {{ form.email_address.label() }}
+              {{ form.email_address(class="form-control", placeholder="Email Address") }}
+
+              {{ form.password1.label() }}
+              {{ form.password1(class="form-control", placeholder="Password") }}
+
+              {{ form.password2.label() }}
+              {{ form.password2(class="form-control", placeholder="Confirm Password") }}
+
+    </form>
+    </div>
+{% endblock %}
