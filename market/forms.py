@@ -8,4 +8,4 @@ class RegisterForm(FlaskForm):
     email_address = StringField(label="Email address")
     password1 = PasswordField(label='password')
     password2 = PasswordField(label='password2')
-    submit = SubmitField(label='submit')
+    submit = SubmitField(label='Create Account')
